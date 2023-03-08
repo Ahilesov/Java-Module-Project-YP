@@ -10,9 +10,13 @@ public class Price {
         while (true) {
             if (sc.hasNextDouble()) {
                 priceProduct = sc.nextDouble();
-                return priceProduct;
+                if (priceProduct <= 0) {
+                    System.out.println("Введено отрицательное или нулевое значение стоимости. Повторите ввод.");
+                } else {
+                    return priceProduct;
+                }
             } else {
-                System.out.println("Введено не корректное значение стоимости.Повторите ввод.");
+                System.out.println("Введено не корректное значение стоимости. Повторите ввод.");
             }
             sc.nextLine();
         }

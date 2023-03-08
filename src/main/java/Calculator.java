@@ -12,7 +12,7 @@ public class Calculator {
                 productName = sc.nextLine();
                 return productName;
             } else {
-                System.out.println("Введено не корректное наименование товара.Повторите ввод.");
+                System.out.println("Введено не корректное наименование товара. Повторите ввод.");
             }
             sc.nextLine();
         }
